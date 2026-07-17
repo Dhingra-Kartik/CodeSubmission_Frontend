@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+}
+
+.emptyState {
+  padding: 20px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--text-light);
+  text-align: center;
+}
+
+.judging {
+  padding: 18px;
+  background: #eff6ff;
+  color: var(--primary);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.infoCard {
+  background: var(--surface-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.infoRow:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+.label {
+  font-weight: 600;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.resultCard {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: white;
+  padding: 18px;
+  transition: 0.2s ease;
+}
+
+.resultCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.outputLabel {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.output {
+  margin: 0;
+  background: #1e1e1e;
+  color: #f8fafc;
+  padding: 14px;
+  border-radius: 8px;
+  font-family: Consolas, monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}

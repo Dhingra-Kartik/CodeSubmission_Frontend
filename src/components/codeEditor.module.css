@@ -1,0 +1,73 @@
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftControls,
+.rightControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.languageSelect {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.languageSelect:focus {
+  border-color: var(--primary);
+}
+
+.button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: var(--radius);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.runButton {
+  background: var(--primary);
+}
+
+.runButton:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.submitButton {
+  background: var(--success);
+}
+
+.submitButton:hover:not(:disabled) {
+  filter: brightness(0.95);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.editorWrapper {
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}

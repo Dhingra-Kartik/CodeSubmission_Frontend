@@ -1,0 +1,91 @@
+.problem {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.difficulty {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.easy {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.medium {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.hard {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.description {
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.examples {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exampleCard {
+  background: var(--surface-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.exampleTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 14px;
+  background: #1e1e1e;
+  color: #f8fafc;
+  border-radius: 8px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 14px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

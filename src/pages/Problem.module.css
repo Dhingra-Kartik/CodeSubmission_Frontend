@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.leftPanel,
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.body{
+    color: hotpink;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
